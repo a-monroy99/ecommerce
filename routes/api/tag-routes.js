@@ -7,13 +7,13 @@ router.get('/', async (req, res) => {
   // find all tags
   // be sure to include its associated Product data
   try {
-    const products = await Tag.findAll({
+    const tags = await Tag.findAll({
       include: [{
         model: Product,
         through: ProductTag
       }]
     })
-    res.json(products)
+    res.json(tags)
   } catch (err) {
     res.json(err)
   }
@@ -23,13 +23,13 @@ router.get('/:id', async (req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
   try {
-    const products = await Tag.findOne({
+    const tags = await Tag.findOne({
       include: [{
         model: Product,
         through: ProductTag
       }]
     })
-    res.json(products)
+    res.json(tags)
   } catch (err) {
     res.json(err)
   }
@@ -40,9 +40,10 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   // create a new tag
   try {
-    
+    const tags = await Tag.create(req.body);
+    res.json(tags)
   } catch (err) {
-    
+    res.json(err)
   }
 });
 
