@@ -12,6 +12,11 @@ In your terminal, run `npm i` then `npm run seeds` to access the starter databas
 
 Please watch the tutorial to understand how the app functions.
 
+
+https://github.com/a-monroy99/ecommerce/assets/125234279/873da41b-dffa-46fd-a3b9-1c2bbe709649
+
+
+
 ## Credits 
 
 N/A
