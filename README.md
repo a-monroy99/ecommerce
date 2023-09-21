@@ -2,7 +2,7 @@
 
 ## Description
 
-This terminal based app is to help keep track of your companies products and it's price organzied by its associated tags or categories; as it generates a random ID to keep track of the products. I learned in this app how to associate different models and their information and how to properly use async await functions. 
+This terminal based app is to help keep track of your companies products and it's price organzied by its associated tags or categories; as it generates a random ID to distinguish one product from the other. I learned in this app how to associate different models and their information and how to properly use async await functions. 
 
 ## Installation
 
